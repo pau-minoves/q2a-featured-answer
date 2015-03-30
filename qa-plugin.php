@@ -18,8 +18,8 @@ if (! defined ( 'QA_VERSION' )) { // don't allow this page to be requested direc
 	exit ();
 }
 
-qa_register_plugin_module ( 'module', 'qa-featured-admin.php', 'qa_featured_admin', 'Featured Questions' );
-qa_register_plugin_layer ( 'qa-featured-layer.php', 'Featured Layer' );
+qa_register_plugin_module ( 'module', 'qa-fa-admin.php', 'qa_featured_admin', 'Featured Answers' );
+qa_register_plugin_layer ( 'qa-fa-layer.php', 'Featured Answers Layer' );
 
 /*
  Omit PHP closing tag to help avoid accidental output

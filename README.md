@@ -8,6 +8,14 @@ This is a plugin for **Question2Answer** that has the capability to make answers
 
 Optionally, a CSS to give a diferent look&feel to those answers can be made. 
 
+This plugin is heavily based on:
+
+https://github.com/NoahY/q2a-featured
+
+License
+-------
+All code herein is Copylefted.
+
 Limitation 
 -----------
 Answers cannot be made featured on a per answer basis. Currently only the only criteria is answer-from-an-expert.

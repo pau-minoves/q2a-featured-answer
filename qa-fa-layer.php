@@ -13,6 +13,7 @@ class qa_html_theme_layer extends qa_html_theme_base {
 			foreach ( $this->content ['a_list'] ['as'] as $idx => $answer ) {
 				if (in_array ( $answer ['raw'] ['handle'], $featured )) {
 					$featured_answers[$idx] = $answer;
+					unset ($featured_answers[$idx]['vote_view']);
 					unset ($this->content['a_list']['as'][$idx]);
 				}
 			}

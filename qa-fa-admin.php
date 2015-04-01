@@ -4,8 +4,8 @@ class qa_featured_admin {
 		switch ($option) {
 			case 'featured_question_css' :
 				return '
-.qa-q-list-item-featured {
-    background-color:#FFC;
+.qa-a-list-answer-featured {
+    background-color:#FFFF99;
 }
 ';
 			case 'fa_enabled' :

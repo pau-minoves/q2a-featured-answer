@@ -2,7 +2,7 @@
 class qa_featured_admin {
 	function option_default($option) {
 		switch ($option) {
-			case 'featured_question_css' :
+			case 'featured_answer_css' :
 				return '
 .qa-a-list-answer-featured {
     background-color:#FFFF99;
@@ -23,9 +23,9 @@ class qa_featured_admin {
 		// Process form input
 		$ok = null;
 		
-		if (qa_clicked ( 'featured_questions_save' )) {
+		if (qa_clicked ( 'featured_answer_save' )) {
 			qa_opt ( 'featured_questions_list', qa_post_text ( 'featured_questions_list' ) );
-			qa_opt ( 'featured_question_css', qa_post_text ( 'featured_question_css' ) );
+			qa_opt ( 'featured_answer_css', qa_post_text ( 'featured_answer_css' ) );
 			qa_opt('fa_enabled' ,    (bool)qa_post_text('fa_enabled'));
 			
 			$ok = qa_lang ( 'admin/options_saved' );
@@ -51,8 +51,8 @@ class qa_featured_admin {
 		);
 		$fields [] = array (
 				'label' => 'Custom css:',
-				'tags' => 'NAME="featured_question_css"',
-				'value' => qa_opt ( 'featured_question_css' ),
+				'tags' => 'NAME="featured_answer_css"',
+				'value' => qa_opt ( 'featured_answer_css' ),
 				'rows' => 10,
 				'type' => 'textarea' 
 		);
@@ -64,7 +64,7 @@ class qa_featured_admin {
 				'buttons' => array (
 						array (
 								'label' => qa_lang_html ( 'main/save_button' ),
-								'tags' => 'NAME="featured_questions_save"' 
+								'tags' => 'NAME="featured_answer_save"' 
 						) 
 				) 
 		);

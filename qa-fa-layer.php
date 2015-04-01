@@ -36,7 +36,7 @@ class qa_html_theme_layer extends qa_html_theme_base {
 		qa_html_theme_base::a_list ( $a_list );
 	}
 	function head_custom() {
-		$this->output ( '<style>', qa_opt ( 'featured_question_css' ), '</style>' );
+		$this->output ( '<style>', qa_opt ( 'featured_answer_css' ), '</style>' );
 		qa_html_theme_base::head_custom ();
 	}
 }

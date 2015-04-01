@@ -3,7 +3,7 @@ class qa_html_theme_layer extends qa_html_theme_base {
 	var $featured_questions;
 	function doctype() {
 		
-		$featured = qa_opt ( 'featured_questions_list' );
+		$featured = qa_opt ( 'featured_answer_list' );
 		$featured_answers = array();
 		
 		if (qa_opt ( 'fa_enabled' ) && array_key_exists ( 'q_view', $this->content )) {

@@ -24,7 +24,7 @@ class qa_featured_admin {
 		$ok = null;
 		
 		if (qa_clicked ( 'featured_answer_save' )) {
-			qa_opt ( 'featured_questions_list', qa_post_text ( 'featured_questions_list' ) );
+			qa_opt ( 'featured_answer_list', qa_post_text ( 'featured_answer_list' ) );
 			qa_opt ( 'featured_answer_css', qa_post_text ( 'featured_answer_css' ) );
 			qa_opt('fa_enabled' ,    (bool)qa_post_text('fa_enabled'));
 			
@@ -44,10 +44,10 @@ class qa_featured_admin {
 		
 		$fields [] = array (
 				'label' => 'Featured question ids',
-				'tags' => 'NAME="featured_questions_list"',
-				'value' => qa_opt ( 'featured_questions_list' ),
+				'tags' => 'NAME="featured_answer_list"',
+				'value' => qa_opt ( 'featured_answer_list' ),
 				'type' => 'text',
-				'note' => 'separate question id numbers with commas (e.g. 123,456)' 
+				'note' => 'Put user names of those users you want to feature answers, separate with commas (e.g. MrExpertA,MrExpertB)' 
 		);
 		$fields [] = array (
 				'label' => 'Custom css:',

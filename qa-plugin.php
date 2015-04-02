@@ -18,7 +18,7 @@ if (! defined ( 'QA_VERSION' )) { // don't allow this page to be requested direc
 	exit ();
 }
 
-qa_register_plugin_module ( 'module', 'qa-fa-admin.php', 'qa_featured_admin', 'Featured Answers' );
+qa_register_plugin_module ( 'module', 'qa-fa-admin.php', 'qa_fa_admin', 'Featured Answers' );
 qa_register_plugin_layer ( 'qa-fa-layer.php', 'Featured Answers Layer' );
 
 /*

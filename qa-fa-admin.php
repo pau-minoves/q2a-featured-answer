@@ -1,5 +1,5 @@
 <?php
-class qa_featured_admin {
+class qa_fa_admin {
 	function option_default($option) {
 		switch ($option) {
 			case 'featured_answer_css' :

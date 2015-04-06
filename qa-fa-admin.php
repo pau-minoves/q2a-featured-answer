@@ -5,7 +5,7 @@ class qa_featured_admin {
 			case 'featured_answer_css' :
 				return '
 .qa-a-list-answer-featured {
-    background-color:#FFFF99;
+    background-color:#FEAC02;
 }
 ';
 			case 'fa_enabled' :

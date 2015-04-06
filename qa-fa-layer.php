@@ -12,13 +12,17 @@ class qa_html_theme_layer extends qa_html_theme_base {
 			
 			foreach ( $this->content ['a_list'] ['as'] as $idx => $answer ) {
 				if (in_array ( $answer ['raw'] ['handle'], $featured )) {
+					
 					$featured_answers[$idx] = $answer;
+					
 					unset ($featured_answers[$idx]['vote_view']);
 					unset ($this->content['a_list']['as'][$idx]);
+
+					array_unshift ( $this->content ['a_list'] ['as'], $featured_answers[$idx] );
 				}
 			}
 			
-			array_unshift ( $this->content ['a_list'] ['as'], $featured_answers[$idx] );
+
 			
 			// Used in q_list() function below to add css to the first featured answers.
 			$this->featured_questions = count ( $featured_answers );
